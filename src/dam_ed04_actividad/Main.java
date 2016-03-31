@@ -5,19 +5,27 @@
 
 package dam_ed04_actividad;
 
-
+/**
+ * Clase Main con el método principal para probar la clase CCuenta
+ * @author Mikel Gil
+ * @version 1.0
+ */
 public class Main {
 
+    /**
+     * Método principal main
+     * @param args 
+     */
     public static void main(String[] args) {
         operativa_cuenta(0);
     }
-
+  
     private static void operativa_cuenta(float cantidad) {
         CCuenta cuenta1;
         double saldoActual;
 
         cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
-        saldoActual = cuenta1.estado();
+        saldoActual = cuenta1.getSaldo();
         System.out.println("El saldo actual es"+ saldoActual );
 
         try {

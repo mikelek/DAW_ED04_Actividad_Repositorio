@@ -24,6 +24,7 @@ public class CCuenta {
         nombre =nom;
         cuenta=cue;
         saldo=sal;
+        tipoInterés = tipo;
     }
 
     public void asignarNombre(String nom)
